@@ -8,7 +8,7 @@ package com.example.kotlin.scope_functions
 fun main() {
     //let
     letDemo()
-    //letDemo1()
+    letDemo1()
     //run
     runDemo()
     //with
@@ -49,7 +49,7 @@ fun letDemo() {
 // “let” can also be used when we want to perform an operation on the result of a call chain.
 fun letDemo1() {
     val numbers = mutableListOf("One", "Two", "Three", "Four", "Five")
-    // fetch the values in the ArrayList whose length is greater than 3.
+    // print the length of numbers where length of each element > 3
     numbers.map { it.length }.filter { it > 3 }.let {
         println(it)
     }
