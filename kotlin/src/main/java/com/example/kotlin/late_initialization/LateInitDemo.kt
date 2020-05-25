@@ -17,7 +17,6 @@ fun main() {
     //s.name = "Deepak"
     //println("Name is ${s.name}")
     s.setData()
-
 }
 
 class Student {
