@@ -13,6 +13,9 @@ fun main() {
     val lastName = " Rattan"
     firstName.add(lastName)
 
+    val str = firstName.removeFirstLastChar()
+    println("After removing first and last character of first Name : $str")
+
     val a = 50
     val b = 100
     val g = a.greaterNumber(b)
@@ -24,6 +27,9 @@ fun main() {
 
 // Extension function add is the newly added method in String class
 fun String.add(s: String) = println(this + s)
+
+// Extension function to remove first and last character of a string
+fun String.removeFirstLastChar(): String = this.substring(1, this.length - 1)
 
 // Extension function greaterNumber added to predefined Int class  
 fun Int.greaterNumber(num: Int): Int = if (this > num) this else num

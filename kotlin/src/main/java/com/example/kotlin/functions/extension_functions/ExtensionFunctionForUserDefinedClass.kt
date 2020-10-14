@@ -17,8 +17,8 @@ fun main() {
     val res = s.isPassed(45)
     println("Student passed ? $res")
 
-    val intl = s.isIntelligent(95)
-    println(intl)
+    val intelligent = s.isIntelligent(95)
+    println("Student intelligent ? $intelligent")
 }
 
 // User defined class
