@@ -43,6 +43,11 @@ fun main() {
         Days.SATURDAY -> println("Today is Saturday")
     }
 
+    when (Card.Diamond) {
+        Card.Diamond -> println("Diamond")
+        Card.Heart -> println("Heart")
+    }
+
 }
 
 // Since enum constants are instances of an Enum class, the constants
