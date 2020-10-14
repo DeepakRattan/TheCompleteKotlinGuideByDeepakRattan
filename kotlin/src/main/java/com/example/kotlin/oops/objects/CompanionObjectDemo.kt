@@ -9,6 +9,7 @@ package com.example.kotlin.oops.objects
  * 3. The name of the companion object can be omitted, in which case the name Companion will be used:
  * 4. If you are familiar with Java, you may relate companion objects with static methods
  * (even though how they work internally is totally different).
+ * 5. To call method of a class directly using class name ,companion object is used .
  */
 
 class Animal {
