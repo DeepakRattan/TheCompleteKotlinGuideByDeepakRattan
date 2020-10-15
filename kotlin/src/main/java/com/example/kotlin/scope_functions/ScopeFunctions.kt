@@ -2,7 +2,14 @@ package com.example.kotlin.scope_functions
 
 /**
  * Created by Deepak Rattan on 19/5/20.
- * Topic : Scope Functions- let ,run ,with ,apply ,also
+ *
+ * Topic : Scope Functions - let ,run ,with ,apply ,also
+ *
+ * Definition : 1. Scoped functions are functions that execute a block of code within the context of an object.
+ * These functions provide a way to give temporary scope to the object under consideration where specific
+ * operations can be applied to the object within the block of code, thereby, resulting in a clean and concise code.
+ *
+ * 2. The context of the object can be referred to as “it” or “this”
  */
 
 fun main() {
@@ -18,8 +25,9 @@ fun main() {
     performRunOperation()
     performWithOperation()
     //apply
-    //applyDemo()
-    //alsoDemo()
+    applyDemo()
+    //also
+    alsoDemo()
 }
 
 /* In Kotlin, if the last statement in a “let” block is a non-assignment statement,
@@ -81,23 +89,23 @@ fun withDemo() {
 }
 
 // run vs with
-
+// performing a null check using a “with” operator is difficult and this is where we can replace it with “run” .
 fun performRunOperation() {
-    //Person object is nullable
+    //Student object is nullable
     val student: Student? = null
     println("----------run----------- ")
     val s = student?.run {
         this.name = "Deepak"
         this.age = 30
         //this.display()
-        return@run "return a string instead of Student object"
+        return@run "Name is ${this.name}"
     }
     println(s)
 
 }
 
 fun performWithOperation() {
-    //Person object is nullable
+    //Student object is nullable
     val student: Student? = null
     val s = with(student) {
         this?.name = "DR"
