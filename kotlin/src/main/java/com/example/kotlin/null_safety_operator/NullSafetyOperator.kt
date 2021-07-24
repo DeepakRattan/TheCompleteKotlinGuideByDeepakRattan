@@ -24,14 +24,14 @@ fun main() {
     // 1. Safe call operator(?.)
     // Returns the name if not null else returns null
     // Use it if we need not to bother about null values
-    println("-----------------Safe call-------------------")
+    println("-----------------1. Safe call-------------------")
     println("Name is $name")
     println("Length of name is ${name?.length}")
     println("--------------------------------------------------------")
 
     // 2. Safe call with let
     // It will execute the let block only if name is not null
-    println("-----------------Safe call with let-------------------")
+    println("-----------------2. Safe call with let-------------------")
     name?.let {
         println("Name is $name") // This statement will not be executed as name is null
         println("Length of name is ${name.length}")
@@ -40,14 +40,14 @@ fun main() {
 
     // 3.Elvis operator (?:)
     // When we need to return different value other than null for a nullable reference,use it
-    println("-----------------Elvis Operator-------------------")
+    println("-----------------3. Elvis Operator-------------------")
     println("Name is ${name ?: "Default"}") // As name is nullable ,so it will print "Default"
     println("Length of name is ${name?.length ?: -1}")
     println("--------------------------------------------------------")
 
     // 4. Non-Null Assertion operator (!!)
     // Use it when we are 100% sure that the value is not null,otherwise NPE will be thrown
-    println("-----------------Non null assertion operator-------------------")
+    println("-----------------4. Non null assertion operator-------------------")
     println("Name is ${name!!}")
     println("Length of name is ${name!!.length}")
     println("--------------------------------------------------------")
