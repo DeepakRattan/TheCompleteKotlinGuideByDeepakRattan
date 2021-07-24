@@ -12,6 +12,7 @@ fun main() {
 open class Animal3 {
     var color: String = ""
 
+    //Secondary Constructor
     constructor(color: String) {
         this.color = color
         println("Superclass : color is $color")
@@ -24,6 +25,7 @@ open class Animal3 {
 class Dog3 : Animal3 {
     var breed: String = ""
 
+    //Secondary Constructor
     constructor(color: String, breed: String) : super(color) {
         this.breed = breed
         println("Subclass : color is $color and breed is $breed")
