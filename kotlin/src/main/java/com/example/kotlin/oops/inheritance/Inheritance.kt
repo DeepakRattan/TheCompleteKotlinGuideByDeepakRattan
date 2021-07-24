@@ -6,7 +6,7 @@ package com.example.kotlin.oops.inheritance
  */
 
 fun main() {
-    var d = Dog()
+    val d = Dog()
     d.color = "Black"
     d.breed = "Labra"
     d.bark()
