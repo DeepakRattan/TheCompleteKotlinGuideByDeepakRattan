@@ -24,9 +24,10 @@ fun main() {
     val s4 = s1.copy(name = "Ajay")
     println("s4 = $s4")
 
-    println("hashcode : ${s4.hashCode()}")
-    println("hashcode : ${s4.hashCode()}")
-    println("hashcode : ${s4.hashCode()}")
+    println("hashcode s1: ${s1.hashCode()}")
+    println("hashcode s2: ${s2.hashCode()}")
+    println("hashcode s3: ${s3.hashCode()}")
+    println("hashcode s4: ${s4.hashCode()}")
 
     println("---------------------")
     val p1 = Person("Abhi", 30)
@@ -53,8 +54,8 @@ fun main() {
     // Destructuring Declaration
     println("Destructuring Declaration")
     val (name, age) = s1
-    println(name)
-    println(age)
+    println("name : $name")
+    println("age : $age")
 
     val comp1 = s1.component1()
     println("Component1 = $comp1")
